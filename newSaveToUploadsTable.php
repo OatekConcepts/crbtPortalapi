@@ -48,25 +48,7 @@ $input = file_get_contents('php://input');
 // Initialize batch_id as null
 $batch_id_check = null;
 
-// Check different content types for batch_id
-/*if (stripos($contentType, 'application/json') !== false) {
-    $jsonBody = json_decode($input, true);
-    $batch_id_check = $jsonBody['batch_id'] ?? null;
-} elseif (!empty($_POST)) {
-    $batch_id_check = $_POST['batch_id'] ?? null;
-} else {
-    // For raw input, try to parse if it's URL-encoded
-    parse_str($input, $parsed);
-    $batch_id_check = $parsed['batch_id'] ?? $input; // Fallback to raw input if not found
-}
 
-// Now log just the batch_id
-if ($batch_id_check !== null) {
-    log_action("INCOMING BATCH_ID: " . $batch_id_check);
-} else {
-    log_action("NO BATCH_ID FOUND IN REQUEST");
-}
-*/
 
 
 // --- Helper Functions ---

@@ -1,0 +1,36 @@
+=== ME ATTEMPT START === | 2026-06-18 08:19:24
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-18 08:19:24
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-18 08:19:32
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-18 08:19:32
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-18 08:19:32
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-18 08:19:32
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-18 08:19:32
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-18 08:19:32
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-18 08:19:32
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-18 08:19:32
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-18 08:19:32
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-18 08:19:32
+<=============================================>
+Me retrieved successfully: id=1 | 2026-06-18 08:19:32
+<=============================================>
+=== ME ATTEMPT END === | 2026-06-18 08:19:32
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-18 08:19:32
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-18 08:19:32
+<=============================================>
+Categories retrieved successfully: count=1 | 2026-06-18 08:19:32
+<=============================================>
+=== READ CATEGORY ATTEMPT END === | 2026-06-18 08:19:32
+<=============================================>
