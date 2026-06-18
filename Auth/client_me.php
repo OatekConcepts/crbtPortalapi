@@ -36,7 +36,7 @@ try {
 
     // Fetch client record — exclude soft-deleted accounts
     $result = $conn->query(
-        "SELECT c.id, c.organisation_id, o.name AS organisation_name, c.name, c.email, c.role, c.token
+        "SELECT c.id, c.organisation_id, o.name AS organisation_name, c.name, c.email, c.role, c.two_fa, c.token
          FROM clients c
          LEFT JOIN organisations o ON c.organisation_id = o.id
          WHERE c.id=$id AND c.soft_delete=0"
@@ -67,7 +67,8 @@ try {
             "organisation_name" => $user['organisation_name'],
             "name"              => $user['name'],
             "email"             => $user['email'],
-            "role"              => $user['role']
+            "role"              => $user['role'],
+            "two_fa"            => (int) $user['two_fa']
         ]
     ], 200);
 } catch (\Throwable $e) {

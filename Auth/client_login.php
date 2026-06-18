@@ -118,7 +118,8 @@ try {
                     "organisation_name" => $client['organisation_name'],
                     "name"              => $client['name'],
                     "email"             => $client['email'],
-                    "role"              => $client['role']
+                    "role"              => $client['role'],
+                    "two_fa"            => (int) $client['two_fa']
                 ]
             ], 200);
         } else {

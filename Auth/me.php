@@ -36,7 +36,7 @@ try {
 
     // Fetch admin record — exclude soft-deleted accounts
     $result = $conn->query(
-        "SELECT id, firstname, lastname, email, role,token FROM admins WHERE id=$id AND soft_delete=0"
+        "SELECT id, firstname, lastname, email, role, two_fa, token FROM admins WHERE id=$id AND soft_delete=0"
     );
 
     if (!$result) {
@@ -63,7 +63,8 @@ try {
                     "firstname" => $user["firstname"],
                     "lastname" => $user["lastname"],
                     "email" => $user["email"],
-                    "role" => $user["role"]
+                    "role" => $user["role"],
+                    "two_fa" => (int) $user["two_fa"]
                 ]
             ], 200);
 } catch (\Throwable $e) {

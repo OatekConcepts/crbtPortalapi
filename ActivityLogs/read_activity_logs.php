@@ -35,14 +35,48 @@ try {
     requireAdminRole($decoded);
 
     // Read query params
-    $id      = $_GET['id']       ?? null;
-    $page    = $_GET['page']     ?? 1;
-    $perPage = $_GET['per_page'] ?? 20;
+    $id       = $_GET['id']        ?? null;
+    $page     = $_GET['page']      ?? 1;
+    $perPage  = $_GET['per_page']  ?? 20;
+    $dateFrom = $_GET['date_from'] ?? null;
+    $dateTo   = $_GET['date_to']   ?? null;
 
     // Validate pagination params
     $page    = max(1, (int) $page);
     $perPage = min(100, max(1, (int) $perPage));
     $offset  = ($page - 1) * $perPage;
+
+    // Validate date range params
+    $dateConditions = [];
+    if ($dateFrom !== null) {
+        $d = DateTime::createFromFormat('Y-m-d', $dateFrom);
+        if (!$d || $d->format('Y-m-d') !== $dateFrom) {
+            log_action("Validation failed: invalid date_from - $dateFrom");
+            echo generateResponse(false, "Invalid date_from format. Use YYYY-MM-DD.", null, 400);
+            closeConnection($conn);
+            exit;
+        }
+        $dateFrom = $conn->real_escape_string($dateFrom);
+        $dateConditions[] = "DATE(created_at) >= '$dateFrom'";
+    }
+    if ($dateTo !== null) {
+        $d = DateTime::createFromFormat('Y-m-d', $dateTo);
+        if (!$d || $d->format('Y-m-d') !== $dateTo) {
+            log_action("Validation failed: invalid date_to - $dateTo");
+            echo generateResponse(false, "Invalid date_to format. Use YYYY-MM-DD.", null, 400);
+            closeConnection($conn);
+            exit;
+        }
+        $dateTo = $conn->real_escape_string($dateTo);
+        $dateConditions[] = "DATE(created_at) <= '$dateTo'";
+    }
+    if ($dateFrom !== null && $dateTo !== null && $dateFrom > $dateTo) {
+        log_action("Validation failed: date_from ($dateFrom) is after date_to ($dateTo)");
+        echo generateResponse(false, "date_from cannot be after date_to.", null, 400);
+        closeConnection($conn);
+        exit;
+    }
+    $whereClause = !empty($dateConditions) ? "WHERE " . implode(" AND ", $dateConditions) : "";
 
     // Single log lookup by id
     if ($id !== null) {
@@ -83,7 +117,7 @@ try {
     }
 
     // Count total logs for pagination metadata
-    $countResult = $conn->query("SELECT COUNT(*) AS total FROM activity_logs");
+    $countResult = $conn->query("SELECT COUNT(*) AS total FROM activity_logs $whereClause");
 
     if (!$countResult) {
         log_action("Read activity logs count query failed: " . $conn->error);
@@ -97,7 +131,7 @@ try {
 
     // Fetch paginated logs, newest first
     $result = $conn->query(
-        "SELECT full_name, activity, status, created_at FROM activity_logs ORDER BY created_at DESC LIMIT $perPage OFFSET $offset"
+        "SELECT full_name, activity, status, created_at FROM activity_logs $whereClause ORDER BY created_at DESC LIMIT $perPage OFFSET $offset"
     );
 
     if (!$result) {

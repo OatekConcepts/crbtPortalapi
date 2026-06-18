@@ -104,7 +104,8 @@ try {
                     "firstname" => $user["firstname"],
                     "lastname" => $user["lastname"],
                     "email" => $user["email"],
-                    "role" => $user["role"]
+                    "role" => $user["role"],
+                    "two_fa" => (int) $user["two_fa"]
                 ]
             ], 200);
         } else {

@@ -884,3 +884,955 @@ Activity logs retrieved successfully: page=1 per_page=5 total=34 | 2026-06-17 14
 <=============================================>
 === READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 14:58:42
 <=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 15:36:42
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 15:36:42
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 15:36:42
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 15:36:42
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 15:36:42
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 15:36:42
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 15:36:42
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 15:36:42
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:36:42
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:36:42
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:36:43
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:36:43
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:36:45
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:36:45
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 15:37:05
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 15:37:05
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 15:37:05
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 15:37:05
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 15:37:05
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 15:37:05
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 15:37:05
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 15:37:05
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:37:06
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:37:06
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:37:07
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:37:07
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:37:09
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:37:09
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:39:53
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:39:53
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:39:54
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:39:54
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:39:56
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:39:56
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 15:40:03
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 15:40:03
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 15:40:03
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 15:40:03
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 15:40:03
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 15:40:03
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 15:40:03
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 15:40:03
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:40:03
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:40:03
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:40:04
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:40:04
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:40:06
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:40:06
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 15:40:33
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 15:40:33
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 15:40:33
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 15:40:33
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 15:40:33
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 15:40:34
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 15:40:34
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 15:40:34
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:40:34
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:40:34
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:40:35
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:40:35
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:40:37
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:40:37
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 15:42:06
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 15:42:06
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 15:42:06
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 15:42:06
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 15:42:06
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 15:42:07
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 15:42:07
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 15:42:07
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:42:07
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:42:07
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:42:08
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:42:08
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:42:10
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:42:10
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 15:47:01
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 15:47:01
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 15:47:01
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 15:47:01
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 15:47:01
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 15:47:01
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 15:47:01
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 15:47:01
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:47:01
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:47:01
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:47:02
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:47:02
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:47:04
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:47:04
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 15:56:37
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 15:56:37
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 15:56:37
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 15:56:37
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 15:56:37
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 15:56:37
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 15:56:37
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 15:56:37
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:56:37
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:56:37
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:56:38
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:56:38
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 15:56:40
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 15:56:40
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 16:01:07
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 16:01:07
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 16:01:07
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 16:01:07
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 16:01:07
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 16:01:07
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 16:01:07
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 16:01:07
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:01:07
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 16:01:07
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:01:08
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 16:01:08
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:01:10
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 16:01:10
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 16:02:34
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 16:02:34
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 16:02:34
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 16:02:34
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 16:02:34
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 16:02:35
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 16:02:35
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 16:02:35
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:02:35
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 16:02:35
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:02:36
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 16:02:36
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:02:38
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-17 16:02:38
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 16:04:35
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 16:04:35
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 16:04:35
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 16:04:35
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 16:04:35
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 16:04:36
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 16:04:36
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 16:04:36
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:04:36
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:04:36
+<=============================================>
+Me retrieved successfully: id=1 | 2026-06-17 16:04:36
+<=============================================>
+=== ME ATTEMPT END === | 2026-06-17 16:04:36
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 16:06:33
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 16:06:33
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 16:06:33
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 16:06:33
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 16:06:33
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 16:06:34
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 16:06:34
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 16:06:34
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:06:34
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:06:34
+<=============================================>
+Me retrieved successfully: id=1 | 2026-06-17 16:06:34
+<=============================================>
+=== ME ATTEMPT END === | 2026-06-17 16:06:34
+<=============================================>
+=== READ CLIENT ATTEMPT START === | 2026-06-17 16:13:44
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:13:44
+<=============================================>
+Clients retrieved successfully: count=2 | 2026-06-17 16:13:44
+<=============================================>
+=== READ CLIENT ATTEMPT END === | 2026-06-17 16:13:44
+<=============================================>
+=== DELETE CLIENT ATTEMPT START === | 2026-06-17 16:13:56
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:13:56
+<=============================================>
+Raw Input Data: {"id":"4"} | 2026-06-17 16:13:56
+<=============================================>
+Client soft-deleted successfully: id=4 (new client) by caller id=1 | 2026-06-17 16:13:56
+<=============================================>
+=== DELETE CLIENT ATTEMPT END === | 2026-06-17 16:13:56
+<=============================================>
+=== READ CLIENT ATTEMPT START === | 2026-06-17 16:13:56
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:13:56
+<=============================================>
+Clients retrieved successfully: count=1 | 2026-06-17 16:13:56
+<=============================================>
+=== READ CLIENT ATTEMPT END === | 2026-06-17 16:13:56
+<=============================================>
+=== CREATE CLIENT ATTEMPT START === | 2026-06-17 16:14:42
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:14:42
+<=============================================>
+Raw Input Data: {"name":"Ibukunoluwa Ogunfowokan","organisation_id":"1","email":"ibukunogunfowokantest@gmail.com","password":"password"} | 2026-06-17 16:14:42
+<=============================================>
+Client created successfully: id=5, email=ibukunogunfowokantest@gmail.com | 2026-06-17 16:14:42
+<=============================================>
+=== CREATE CLIENT ATTEMPT END === | 2026-06-17 16:14:42
+<=============================================>
+=== READ CLIENT ATTEMPT START === | 2026-06-17 16:14:42
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:14:42
+<=============================================>
+Clients retrieved successfully: count=2 | 2026-06-17 16:14:42
+<=============================================>
+=== READ CLIENT ATTEMPT END === | 2026-06-17 16:14:42
+<=============================================>
+=== READ CLIENT ATTEMPT START === | 2026-06-17 16:22:58
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:22:58
+<=============================================>
+Clients retrieved successfully: count=2 | 2026-06-17 16:22:58
+<=============================================>
+=== READ CLIENT ATTEMPT END === | 2026-06-17 16:22:58
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:23:06
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:23:06
+<=============================================>
+Me retrieved successfully: id=1 | 2026-06-17 16:23:06
+<=============================================>
+=== ME ATTEMPT END === | 2026-06-17 16:23:06
+<=============================================>
+=== READ ORGANISATION ATTEMPT START === | 2026-06-17 16:23:27
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:23:27
+<=============================================>
+Organisations retrieved successfully: count=1 | 2026-06-17 16:23:27
+<=============================================>
+=== READ ORGANISATION ATTEMPT END === | 2026-06-17 16:23:27
+<=============================================>
+=== UPDATE ORGANISATION ATTEMPT START === | 2026-06-17 16:25:13
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:25:13
+<=============================================>
+Raw Input Data: {"id":"1","name":"BBC2","email":"bbc@bbcglobal3.com","url":"https:\/\/bbc3.ai\/"} | 2026-06-17 16:25:13
+<=============================================>
+Organisation updated successfully: id=1 by caller id=1 | 2026-06-17 16:25:13
+<=============================================>
+=== UPDATE ORGANISATION ATTEMPT END === | 2026-06-17 16:25:13
+<=============================================>
+=== READ ORGANISATION ATTEMPT START === | 2026-06-17 16:25:13
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:25:13
+<=============================================>
+Organisations retrieved successfully: count=1 | 2026-06-17 16:25:13
+<=============================================>
+=== READ ORGANISATION ATTEMPT END === | 2026-06-17 16:25:13
+<=============================================>
+=== UPDATE ORGANISATION ATTEMPT START === | 2026-06-17 16:25:23
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:25:23
+<=============================================>
+Raw Input Data: {"id":"1","name":"BBC2","email":"bbc@bbcglobal3.com","url":"https:\/\/bbc3.ai\/"} | 2026-06-17 16:25:23
+<=============================================>
+Organisation updated successfully: id=1 by caller id=1 | 2026-06-17 16:25:23
+<=============================================>
+=== UPDATE ORGANISATION ATTEMPT END === | 2026-06-17 16:25:23
+<=============================================>
+=== READ ORGANISATION ATTEMPT START === | 2026-06-17 16:25:23
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:25:23
+<=============================================>
+Organisations retrieved successfully: count=1 | 2026-06-17 16:25:23
+<=============================================>
+=== READ ORGANISATION ATTEMPT END === | 2026-06-17 16:25:23
+<=============================================>
+=== CREATE ORGANISATION ATTEMPT START === | 2026-06-17 16:25:52
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:25:52
+<=============================================>
+Raw Input Data: {"name":"new ordanisation","email":"organisation@gmail.com","url":"https:\/\/www.exampleurl.com"} | 2026-06-17 16:25:52
+<=============================================>
+Organisation created successfully: id=4, name=new ordanisation | 2026-06-17 16:25:52
+<=============================================>
+=== CREATE ORGANISATION ATTEMPT END === | 2026-06-17 16:25:52
+<=============================================>
+=== READ ORGANISATION ATTEMPT START === | 2026-06-17 16:25:52
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:25:52
+<=============================================>
+Organisations retrieved successfully: count=2 | 2026-06-17 16:25:52
+<=============================================>
+=== READ ORGANISATION ATTEMPT END === | 2026-06-17 16:25:52
+<=============================================>
+=== DELETE ORGANISATION ATTEMPT START === | 2026-06-17 16:25:58
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:25:58
+<=============================================>
+Raw Input Data: {"id":"4"} | 2026-06-17 16:25:58
+<=============================================>
+Organisation deleted successfully: id=4 (new ordanisation) by caller id=1 | 2026-06-17 16:25:58
+<=============================================>
+=== DELETE ORGANISATION ATTEMPT END === | 2026-06-17 16:25:58
+<=============================================>
+=== READ ORGANISATION ATTEMPT START === | 2026-06-17 16:25:58
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:25:58
+<=============================================>
+Organisations retrieved successfully: count=1 | 2026-06-17 16:25:58
+<=============================================>
+=== READ ORGANISATION ATTEMPT END === | 2026-06-17 16:25:58
+<=============================================>
+=== READ CLIENT ATTEMPT START === | 2026-06-17 16:26:06
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:26:06
+<=============================================>
+Clients retrieved successfully: count=2 | 2026-06-17 16:26:06
+<=============================================>
+=== READ CLIENT ATTEMPT END === | 2026-06-17 16:26:06
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:37:58
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:37:58
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:37:59
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:37:59
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:38:01
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:38:01
+<=============================================>
+=== CREATE CATEGORY ATTEMPT START === | 2026-06-17 16:38:11
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:38:11
+<=============================================>
+=== CREATE CATEGORY ATTEMPT START === | 2026-06-17 16:38:12
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:38:12
+<=============================================>
+=== CREATE CATEGORY ATTEMPT START === | 2026-06-17 16:38:21
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:38:21
+<=============================================>
+=== CREATE CATEGORY ATTEMPT START === | 2026-06-17 16:38:22
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:38:22
+<=============================================>
+=== CREATE CATEGORY ATTEMPT START === | 2026-06-17 16:39:25
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:39:25
+<=============================================>
+=== CREATE CATEGORY ATTEMPT START === | 2026-06-17 16:39:26
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:39:26
+<=============================================>
+=== CREATE CATEGORY ATTEMPT START === | 2026-06-17 16:40:06
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:40:06
+<=============================================>
+=== CREATE CATEGORY ATTEMPT START === | 2026-06-17 16:40:07
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:40:07
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:41:45
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:41:45
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:41:45
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:41:45
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:44:03
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-17 16:44:03
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 16:44:17
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 16:44:17
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 16:44:17
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 16:44:17
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 16:44:17
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 16:44:18
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 16:44:18
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 16:44:18
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:44:18
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:44:18
+<=============================================>
+Me retrieved successfully: id=1 | 2026-06-17 16:44:18
+<=============================================>
+=== ME ATTEMPT END === | 2026-06-17 16:44:18
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:44:18
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:44:18
+<=============================================>
+Categories retrieved successfully: count=0 | 2026-06-17 16:44:18
+<=============================================>
+=== READ CATEGORY ATTEMPT END === | 2026-06-17 16:44:18
+<=============================================>
+=== READ ORGANISATION ATTEMPT START === | 2026-06-17 16:44:25
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:44:25
+<=============================================>
+Organisations retrieved successfully: count=1 | 2026-06-17 16:44:25
+<=============================================>
+=== READ ORGANISATION ATTEMPT END === | 2026-06-17 16:44:25
+<=============================================>
+=== READ CLIENT ATTEMPT START === | 2026-06-17 16:44:25
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:44:25
+<=============================================>
+Clients retrieved successfully: count=2 | 2026-06-17 16:44:25
+<=============================================>
+=== READ CLIENT ATTEMPT END === | 2026-06-17 16:44:25
+<=============================================>
+=== CREATE CATEGORY ATTEMPT START === | 2026-06-17 16:44:43
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:44:43
+<=============================================>
+Raw Input Data: {"name":"crbt"} | 2026-06-17 16:44:43
+<=============================================>
+Category created successfully: id=2, name=crbt | 2026-06-17 16:44:43
+<=============================================>
+=== CREATE CATEGORY ATTEMPT END === | 2026-06-17 16:44:43
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:44:43
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:44:43
+<=============================================>
+Categories retrieved successfully: count=1 | 2026-06-17 16:44:43
+<=============================================>
+=== READ CATEGORY ATTEMPT END === | 2026-06-17 16:44:43
+<=============================================>
+=== UPDATE CATEGORY ATTEMPT START === | 2026-06-17 16:44:48
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:44:48
+<=============================================>
+Raw Input Data: {"id":"2","name":"crbt"} | 2026-06-17 16:44:48
+<=============================================>
+Category updated successfully: id=2 name=crbt by caller id=1 | 2026-06-17 16:44:48
+<=============================================>
+=== UPDATE CATEGORY ATTEMPT END === | 2026-06-17 16:44:48
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:44:48
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:44:48
+<=============================================>
+Categories retrieved successfully: count=1 | 2026-06-17 16:44:48
+<=============================================>
+=== READ CATEGORY ATTEMPT END === | 2026-06-17 16:44:48
+<=============================================>
+=== UPDATE CATEGORY ATTEMPT START === | 2026-06-17 16:44:52
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:44:52
+<=============================================>
+Raw Input Data: {"id":"2","name":"crbt2"} | 2026-06-17 16:44:52
+<=============================================>
+Category updated successfully: id=2 name=crbt2 by caller id=1 | 2026-06-17 16:44:52
+<=============================================>
+=== UPDATE CATEGORY ATTEMPT END === | 2026-06-17 16:44:52
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:44:52
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:44:52
+<=============================================>
+Categories retrieved successfully: count=1 | 2026-06-17 16:44:52
+<=============================================>
+=== READ CATEGORY ATTEMPT END === | 2026-06-17 16:44:52
+<=============================================>
+=== DELETE CATEGORY ATTEMPT START === | 2026-06-17 16:44:55
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:44:55
+<=============================================>
+Raw Input Data: {"id":"2"} | 2026-06-17 16:44:55
+<=============================================>
+Category deleted successfully: id=2 (crbt2) by caller id=1 | 2026-06-17 16:44:55
+<=============================================>
+=== DELETE CATEGORY ATTEMPT END === | 2026-06-17 16:44:55
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:44:55
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:44:55
+<=============================================>
+Categories retrieved successfully: count=0 | 2026-06-17 16:44:55
+<=============================================>
+=== READ CATEGORY ATTEMPT END === | 2026-06-17 16:44:55
+<=============================================>
+=== CREATE CATEGORY ATTEMPT START === | 2026-06-17 16:45:00
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:45:00
+<=============================================>
+Raw Input Data: {"name":"crbt"} | 2026-06-17 16:45:00
+<=============================================>
+Category created successfully: id=3, name=crbt | 2026-06-17 16:45:00
+<=============================================>
+=== CREATE CATEGORY ATTEMPT END === | 2026-06-17 16:45:00
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:45:00
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:45:00
+<=============================================>
+Categories retrieved successfully: count=1 | 2026-06-17 16:45:00
+<=============================================>
+=== READ CATEGORY ATTEMPT END === | 2026-06-17 16:45:00
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:47:30
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:47:30
+<=============================================>
+Me retrieved successfully: id=1 | 2026-06-17 16:47:30
+<=============================================>
+=== ME ATTEMPT END === | 2026-06-17 16:47:30
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:47:42
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:47:42
+<=============================================>
+Categories retrieved successfully: count=1 | 2026-06-17 16:47:42
+<=============================================>
+=== READ CATEGORY ATTEMPT END === | 2026-06-17 16:47:42
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 16:51:23
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:51:23
+<=============================================>
+Me retrieved successfully: id=1 | 2026-06-17 16:51:23
+<=============================================>
+=== ME ATTEMPT END === | 2026-06-17 16:51:23
+<=============================================>
+=== READ CATEGORY ATTEMPT START === | 2026-06-17 16:51:23
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:51:23
+<=============================================>
+Categories retrieved successfully: count=1 | 2026-06-17 16:51:23
+<=============================================>
+=== READ CATEGORY ATTEMPT END === | 2026-06-17 16:51:23
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 16:51:27
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:51:27
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=57 | 2026-06-17 16:51:27
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 16:51:27
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 16:51:42
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:51:42
+<=============================================>
+Activity logs retrieved successfully: page=2 per_page=10 total=57 | 2026-06-17 16:51:42
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 16:51:42
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 16:51:44
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:51:44
+<=============================================>
+Activity logs retrieved successfully: page=3 per_page=10 total=57 | 2026-06-17 16:51:44
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 16:51:44
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 16:51:47
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:51:47
+<=============================================>
+Activity logs retrieved successfully: page=4 per_page=10 total=57 | 2026-06-17 16:51:47
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 16:51:47
+<=============================================>
+=== READ ORGANISATION ATTEMPT START === | 2026-06-17 16:51:58
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:51:58
+<=============================================>
+Organisations retrieved successfully: count=1 | 2026-06-17 16:51:58
+<=============================================>
+=== READ ORGANISATION ATTEMPT END === | 2026-06-17 16:51:58
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 16:52:08
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:52:08
+<=============================================>
+Activity logs retrieved successfully: page=5 per_page=10 total=57 | 2026-06-17 16:52:08
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 16:52:08
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 16:52:08
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 16:52:08
+<=============================================>
+Activity logs retrieved successfully: page=6 per_page=10 total=57 | 2026-06-17 16:52:08
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 16:52:08
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:00:38
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:00:38
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=57 | 2026-06-17 17:00:38
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:00:38
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:00:42
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:00:42
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=20 total=57 | 2026-06-17 17:00:42
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:00:42
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:00:53
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:00:53
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=57 | 2026-06-17 17:00:53
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:00:53
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:01:21
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:01:21
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=57 | 2026-06-17 17:01:21
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:01:21
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:01:24
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:01:24
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=57 | 2026-06-17 17:01:24
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:01:24
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:01:33
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:01:33
+<=============================================>
+Activity logs retrieved successfully: page=2 per_page=10 total=57 | 2026-06-17 17:01:33
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:01:33
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:01:33
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:01:33
+<=============================================>
+Activity logs retrieved successfully: page=3 per_page=10 total=57 | 2026-06-17 17:01:33
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:01:33
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:01:34
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:01:34
+<=============================================>
+Activity logs retrieved successfully: page=4 per_page=10 total=57 | 2026-06-17 17:01:34
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:01:34
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:01:54
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:01:54
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=53 | 2026-06-17 17:01:54
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:01:54
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 17:01:57
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:01:57
+<=============================================>
+Me retrieved successfully: id=1 | 2026-06-17 17:01:57
+<=============================================>
+=== ME ATTEMPT END === | 2026-06-17 17:01:57
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:01:57
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:01:57
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=57 | 2026-06-17 17:01:57
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:01:57
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 17:03:18
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:03:18
+<=============================================>
+Me retrieved successfully: id=1 | 2026-06-17 17:03:18
+<=============================================>
+=== ME ATTEMPT END === | 2026-06-17 17:03:18
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:03:18
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:03:18
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=57 | 2026-06-17 17:03:18
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:03:18
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:03:37
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:03:37
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=0 | 2026-06-17 17:03:37
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:03:37
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:03:47
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:03:47
+<=============================================>
+Validation failed: date_from (2026-06-18) is after date_to (2026-06-17) | 2026-06-17 17:03:47
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:03:48
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:03:48
+<=============================================>
+Validation failed: date_from (2026-06-18) is after date_to (2026-06-17) | 2026-06-17 17:03:48
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:03:50
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:03:50
+<=============================================>
+Validation failed: date_from (2026-06-18) is after date_to (2026-06-17) | 2026-06-17 17:03:50
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:04:05
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:04:05
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=57 | 2026-06-17 17:04:05
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:04:05
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:06:57
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:06:57
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=57 | 2026-06-17 17:06:57
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:06:57
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:07:05
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:07:05
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=0 | 2026-06-17 17:07:05
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:07:05
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:07:15
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:07:15
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=0 | 2026-06-17 17:07:15
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:07:15
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:07:18
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:07:18
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=0 | 2026-06-17 17:07:18
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:07:18
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT START === | 2026-06-17 17:07:22
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:07:22
+<=============================================>
+Activity logs retrieved successfully: page=1 per_page=10 total=53 | 2026-06-17 17:07:22
+<=============================================>
+=== READ ACTIVITY LOGS ATTEMPT END === | 2026-06-17 17:07:22
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-17 17:22:50
+<=============================================>
+Raw Input Data: {"email":"ibukunogunfowokan@gmail.com","password":"password"} | 2026-06-17 17:22:50
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='ibukunogunfowokan@gmail.com' | 2026-06-17 17:22:50
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-17 17:22:50
+<=============================================>
+User record fetched for: ibukunogunfowokan@gmail.com | 2026-06-17 17:22:50
+<=============================================>
+Password verified successfully for user ID: 1 | 2026-06-17 17:22:50
+<=============================================>
+JWT generated for user ID: 1 | 2026-06-17 17:22:50
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-17 17:22:50
+<=============================================>
+=== ME ATTEMPT START === | 2026-06-17 17:22:50
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:22:50
+<=============================================>
+Me retrieved successfully: id=1 | 2026-06-17 17:22:50
+<=============================================>
+=== ME ATTEMPT END === | 2026-06-17 17:22:50
+<=============================================>
+=== CHANGE PASSWORD ATTEMPT START === | 2026-06-17 17:23:19
+<=============================================>
+Authorized caller: id=1 role=super_admin | 2026-06-17 17:23:19
+<=============================================>
+Password changed successfully for id=1 | 2026-06-17 17:23:19
+<=============================================>
+=== CHANGE PASSWORD ATTEMPT END === | 2026-06-17 17:23:19
+<=============================================>
