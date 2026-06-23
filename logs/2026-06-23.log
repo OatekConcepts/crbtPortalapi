@@ -1,0 +1,192 @@
+=== GET REPORTS ATTEMPT START === | 2026-06-23 16:51:10
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-23 16:51:10
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-23 16:52:10
+<=============================================>
+Raw Input Data: {"email":"akinjuwon.a@oatek.net","password":"password"} | 2026-06-23 16:52:10
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='akinjuwon.a@oatek.net' | 2026-06-23 16:52:10
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-23 16:52:10
+<=============================================>
+User record fetched for: akinjuwon.a@oatek.net | 2026-06-23 16:52:10
+<=============================================>
+Password verified successfully for user ID: 2 | 2026-06-23 16:52:11
+<=============================================>
+JWT generated for user ID: 2 | 2026-06-23 16:52:11
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-23 16:52:11
+<=============================================>
+=== GET REPORTS ATTEMPT START === | 2026-06-23 16:52:17
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-23 16:52:17
+<=============================================>
+=== GET REPORTS ATTEMPT START === | 2026-06-23 16:52:24
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-23 16:52:24
+<=============================================>
+=== GET REPORTS ATTEMPT START === | 2026-06-23 16:52:45
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-23 16:52:45
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-23 16:52:53
+<=============================================>
+Raw Input Data: {"email":"akinjuwon.a@oatek.net","password":"password"} | 2026-06-23 16:52:53
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='akinjuwon.a@oatek.net' | 2026-06-23 16:52:53
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-23 16:52:53
+<=============================================>
+User record fetched for: akinjuwon.a@oatek.net | 2026-06-23 16:52:53
+<=============================================>
+Password verified successfully for user ID: 2 | 2026-06-23 16:52:53
+<=============================================>
+JWT generated for user ID: 2 | 2026-06-23 16:52:53
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-23 16:52:53
+<=============================================>
+=== GET REPORTS ATTEMPT START === | 2026-06-23 16:53:04
+<=============================================>
+Authorized caller: id=2 role=admin | 2026-06-23 16:53:04
+<=============================================>
+Get reports exception: Table 'crbtportal.report_upload' doesn't exist | 2026-06-23 16:53:05
+<=============================================>
+=== GET REPORTS ATTEMPT END === | 2026-06-23 16:53:05
+<=============================================>
+=== GET REPORTS ATTEMPT START === | 2026-06-23 16:53:38
+<=============================================>
+Authorized caller: id=2 role=admin | 2026-06-23 16:53:38
+<=============================================>
+Get reports exception: Table 'crbtportal.category' doesn't exist | 2026-06-23 16:53:38
+<=============================================>
+=== GET REPORTS ATTEMPT END === | 2026-06-23 16:53:38
+<=============================================>
+=== GET REPORTS ATTEMPT START === | 2026-06-23 16:54:04
+<=============================================>
+Authorized caller: id=2 role=admin | 2026-06-23 16:54:04
+<=============================================>
+Get reports successful: returned 10 records out of 10 total. | 2026-06-23 16:54:04
+<=============================================>
+=== GET REPORTS ATTEMPT END === | 2026-06-23 16:54:04
+<=============================================>
+=== GET REPORTS ATTEMPT START === | 2026-06-23 16:54:52
+<=============================================>
+Authorized caller: id=2 role=admin | 2026-06-23 16:54:52
+<=============================================>
+Get reports successful: returned 10 records out of 10 total. | 2026-06-23 16:54:52
+<=============================================>
+=== GET REPORTS ATTEMPT END === | 2026-06-23 16:54:52
+<=============================================>
+=== GET REPORTS ATTEMPT START === | 2026-06-23 16:58:34
+<=============================================>
+Authorized caller: id=2 role=admin | 2026-06-23 16:58:34
+<=============================================>
+Get reports successful: returned 3 records out of 10 total. | 2026-06-23 16:58:34
+<=============================================>
+=== GET REPORTS ATTEMPT END === | 2026-06-23 16:58:34
+<=============================================>
+=== GET REPORTS ATTEMPT START === | 2026-06-23 16:58:49
+<=============================================>
+Authorized caller: id=2 role=admin | 2026-06-23 16:58:49
+<=============================================>
+Get reports successful: returned 3 records out of 10 total. | 2026-06-23 16:58:49
+<=============================================>
+=== GET REPORTS ATTEMPT END === | 2026-06-23 16:58:49
+<=============================================>
+=== GET REPORTS ATTEMPT START === | 2026-06-23 17:12:43
+<=============================================>
+Authorized caller: id=2 role=admin | 2026-06-23 17:12:43
+<=============================================>
+Get reports successful: returned 3 records out of 10 total. | 2026-06-23 17:12:43
+<=============================================>
+=== GET REPORTS ATTEMPT END === | 2026-06-23 17:12:43
+<=============================================>
+=== CLIENT GET REPORTS ATTEMPT START === | 2026-06-23 17:17:22
+<=============================================>
+Authorized caller: id=2 role=admin | 2026-06-23 17:17:22
+<=============================================>
+Client get reports blocked: invalid role admin | 2026-06-23 17:17:22
+<=============================================>
+=== CLIENT LOGIN ATTEMPT START === | 2026-06-23 17:20:42
+<=============================================>
+Raw Input Data: {"email":"akinjuwon.a@oatek.net","password":"password"} | 2026-06-23 17:20:42
+<=============================================>
+Validation failed: Missing email, password or url. | 2026-06-23 17:20:42
+<=============================================>
+=== CLIENT LOGIN ATTEMPT START === | 2026-06-23 17:27:04
+<=============================================>
+Raw Input Data: {"email":"akinjuwon.a@oatek.net","password":"password","url":"https:\/\/www.mrjuwon.com"} | 2026-06-23 17:27:04
+<=============================================>
+Executing SQL query: SELECT c.id, c.organisation_id, o.name AS organisation_name, o.url AS organisation_url, c.name, c.email, c.password, c.role, c.two_fa, c.soft_delete FROM clients c LEFT JOIN organisations o ON c.organisation_id = o.id WHERE c.email='akinjuwon.a@oatek.net' | 2026-06-23 17:27:04
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-23 17:27:04
+<=============================================>
+Client record fetched for: akinjuwon.a@oatek.net | 2026-06-23 17:27:04
+<=============================================>
+Login blocked: client does not exist (soft deleted): akinjuwon.a@oatek.net | 2026-06-23 17:27:04
+<=============================================>
+=== CLIENT LOGIN ATTEMPT START === | 2026-06-23 17:28:11
+<=============================================>
+Raw Input Data: {"email":"akinjuwon.a@oatek.net","password":"password","url":"https:\/\/www.mrjuwon.com"} | 2026-06-23 17:28:11
+<=============================================>
+Executing SQL query: SELECT c.id, c.organisation_id, o.name AS organisation_name, o.url AS organisation_url, c.name, c.email, c.password, c.role, c.two_fa, c.soft_delete FROM clients c LEFT JOIN organisations o ON c.organisation_id = o.id WHERE c.email='akinjuwon.a@oatek.net' | 2026-06-23 17:28:11
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-23 17:28:11
+<=============================================>
+Client record fetched for: akinjuwon.a@oatek.net | 2026-06-23 17:28:11
+<=============================================>
+Password verified successfully for client ID: 4 | 2026-06-23 17:28:11
+<=============================================>
+JWT generated for client ID: 4 | 2026-06-23 17:28:11
+<=============================================>
+=== CLIENT LOGIN ATTEMPT END === | 2026-06-23 17:28:11
+<=============================================>
+=== CLIENT GET REPORTS ATTEMPT START === | 2026-06-23 17:28:29
+<=============================================>
+Authorized caller: id=4 role=user | 2026-06-23 17:28:29
+<=============================================>
+Client get reports successful: client_id=4, org=1, returned 10 records out of 10 total. | 2026-06-23 17:28:30
+<=============================================>
+=== CLIENT GET REPORTS ATTEMPT END === | 2026-06-23 17:28:30
+<=============================================>
+=== UPLOAD REPORT ATTEMPT START === | 2026-06-23 17:36:43
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-23 17:36:43
+<=============================================>
+=== LOGIN ATTEMPT START === | 2026-06-23 17:36:54
+<=============================================>
+Raw Input Data: {"email":"akinjuwon.a@oatek.net","password":"password"} | 2026-06-23 17:36:54
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='akinjuwon.a@oatek.net' | 2026-06-23 17:36:54
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-23 17:36:54
+<=============================================>
+User record fetched for: akinjuwon.a@oatek.net | 2026-06-23 17:36:54
+<=============================================>
+Password verified successfully for user ID: 2 | 2026-06-23 17:36:55
+<=============================================>
+JWT generated for user ID: 2 | 2026-06-23 17:36:55
+<=============================================>
+=== LOGIN ATTEMPT END === | 2026-06-23 17:36:55
+<=============================================>
+=== UPLOAD REPORT ATTEMPT START === | 2026-06-23 17:37:35
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-23 17:37:35
+<=============================================>
+=== UPLOAD REPORT ATTEMPT START === | 2026-06-23 17:37:48
+<=============================================>
+Authorized caller: id=2 role=admin | 2026-06-23 17:37:48
+<=============================================>
+Upload successful: upload_id=3, inserted=10, errors=0 | 2026-06-23 17:37:48
+<=============================================>
+=== UPLOAD REPORT ATTEMPT END === | 2026-06-23 17:37:48
+<=============================================>
+=== CLIENT GET REPORTS ATTEMPT START === | 2026-06-23 17:38:22
+<=============================================>
+Authorized caller: id=4 role=user | 2026-06-23 17:38:22
+<=============================================>
+Client get reports successful: client_id=4, org=2, returned 10 records out of 10 total. | 2026-06-23 17:38:22
+<=============================================>
+=== CLIENT GET REPORTS ATTEMPT END === | 2026-06-23 17:38:22
+<=============================================>
