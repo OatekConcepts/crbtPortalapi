@@ -202,7 +202,7 @@ function sendSms($to, $text, $from = '39602', $smsc = '500') {
     // Execute request
     $response = curl_exec($ch);
     $error = curl_error($ch);
-    curl_close($ch);
+    // curl_close($ch);
 
     // Return response or error
     if ($error) {
@@ -218,9 +218,13 @@ function sendSms($to, $text, $from = '39602', $smsc = '500') {
 
 function sendMail($otp, $email)
 {
-    require_once './PHPMailer/PHPMailer.php';
-    require_once './PHPMailer/SMTP.php';
-    require_once './PHPMailer/Exception.php';
+    // require_once './PHPMailer/PHPMailer.php';
+    // require_once './PHPMailer/SMTP.php';
+    // require_once './PHPMailer/Exception.php';
+
+    require_once __DIR__ . '/PHPMailer/PHPMailer.php';
+    require_once __DIR__ . '/PHPMailer/SMTP.php';
+    require_once __DIR__ . '/PHPMailer/Exception.php';
 
     $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
@@ -317,7 +321,7 @@ function sendMails($otp, $email)
 
     $result = curl_exec($ch);
     $response = json_decode($result, true);
-    curl_close($ch);
+    // curl_close($ch);
 
     if (isset($response['MessageID'])) {
         log_action("Email sent: " . print_r($response, true));

@@ -1,0 +1,226 @@
+=== CLIENT FORGOT PASSWORD ATTEMPT START === | 2026-06-24 09:48:35
+<=============================================>
+Raw Input: {"email":"akinjuwon.a@oatek.net"} | 2026-06-24 09:48:35
+<=============================================>
+Email send failed: {"ErrorCode":10,"Message":"Request does not contain a valid Server token."} | 2026-06-24 09:48:36
+<=============================================>
+Failed to send OTP email to akinjuwon.a@oatek.net | 2026-06-24 09:48:36
+<=============================================>
+Forgot password OTP sent to email: akinjuwon.a@oatek.net | 2026-06-24 09:48:36
+<=============================================>
+=== CLIENT FORGOT PASSWORD ATTEMPT END === | 2026-06-24 09:48:36
+<=============================================>
+=== CLIENT FORGOT PASSWORD ATTEMPT START === | 2026-06-24 09:51:24
+<=============================================>
+Raw Input: {"email":"akinjuwon.a@oatek.net","otp":"313146","new_password":"password1"} | 2026-06-24 09:51:24
+<=============================================>
+Email send failed: {"ErrorCode":10,"Message":"Request does not contain a valid Server token."} | 2026-06-24 09:51:25
+<=============================================>
+Failed to send OTP email to akinjuwon.a@oatek.net | 2026-06-24 09:51:25
+<=============================================>
+Forgot password OTP sent to email: akinjuwon.a@oatek.net | 2026-06-24 09:51:25
+<=============================================>
+=== CLIENT FORGOT PASSWORD ATTEMPT END === | 2026-06-24 09:51:25
+<=============================================>
+=== CLIENT GET REPORTS ATTEMPT START === | 2026-06-24 09:52:34
+<=============================================>
+Auth blocked: Authorization header missing | 2026-06-24 09:52:34
+<=============================================>
+=== CLIENT FORGOT PASSWORD ATTEMPT START === | 2026-06-24 09:53:59
+<=============================================>
+Raw Input: {"email":"akinjuwon.a@oatek.net","otp":"313146","new_password":"password1"} | 2026-06-24 09:53:59
+<=============================================>
+Email send failed: {"ErrorCode":10,"Message":"Request does not contain a valid Server token."} | 2026-06-24 09:54:00
+<=============================================>
+Failed to send OTP email to akinjuwon.a@oatek.net | 2026-06-24 09:54:00
+<=============================================>
+Forgot password OTP sent to email: akinjuwon.a@oatek.net | 2026-06-24 09:54:00
+<=============================================>
+=== CLIENT FORGOT PASSWORD ATTEMPT END === | 2026-06-24 09:54:00
+<=============================================>
+=== CLIENT RESET PASSWORD ATTEMPT START === | 2026-06-24 09:54:36
+<=============================================>
+Raw Input: {"email":"akinjuwon.a@oatek.net","otp":"313146","new_password":"password1"} | 2026-06-24 09:54:36
+<=============================================>
+OTP mismatch for client id=4, attempts=1 | 2026-06-24 09:54:36
+<=============================================>
+=== CLIENT RESET PASSWORD ATTEMPT START === | 2026-06-24 09:54:52
+<=============================================>
+Raw Input: {"email":"akinjuwon.a@oatek.net","otp":"225305","new_password":"password1"} | 2026-06-24 09:54:52
+<=============================================>
+OTP mismatch for client id=4, attempts=2 | 2026-06-24 09:54:52
+<=============================================>
+=== CLIENT RESET PASSWORD ATTEMPT START === | 2026-06-24 09:55:01
+<=============================================>
+Raw Input: {"email":"akinjuwon.a@oatek.net","otp":"225305","new_password":"password1"} | 2026-06-24 09:55:01
+<=============================================>
+OTP mismatch for client id=4, attempts=3 | 2026-06-24 09:55:01
+<=============================================>
+=== CLIENT FORGOT PASSWORD ATTEMPT START === | 2026-06-24 09:55:11
+<=============================================>
+Raw Input: {"email":"akinjuwon.a@oatek.net"} | 2026-06-24 09:55:11
+<=============================================>
+Email send failed: {"ErrorCode":10,"Message":"Request does not contain a valid Server token."} | 2026-06-24 09:55:12
+<=============================================>
+Failed to send OTP email to akinjuwon.a@oatek.net | 2026-06-24 09:55:12
+<=============================================>
+Forgot password OTP sent to email: akinjuwon.a@oatek.net | 2026-06-24 09:55:12
+<=============================================>
+=== CLIENT FORGOT PASSWORD ATTEMPT END === | 2026-06-24 09:55:12
+<=============================================>
+=== CLIENT RESET PASSWORD ATTEMPT START === | 2026-06-24 09:55:35
+<=============================================>
+Raw Input: {"email":"akinjuwon.a@oatek.net","otp":"733206","new_password":"password1"} | 2026-06-24 09:55:35
+<=============================================>
+Password reset successful for client id=4 | 2026-06-24 09:55:35
+<=============================================>
+=== CLIENT RESET PASSWORD ATTEMPT END === | 2026-06-24 09:55:35
+<=============================================>
+=== ADMIN LOGIN ATTEMPT START === | 2026-06-24 10:14:34
+<=============================================>
+Raw Input Data: {"email":"akinjuwon.a@oatek.net","password":"password"} | 2026-06-24 10:14:34
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='akinjuwon.a@oatek.net' | 2026-06-24 10:14:34
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-24 10:14:34
+<=============================================>
+User record fetched for: akinjuwon.a@oatek.net | 2026-06-24 10:14:34
+<=============================================>
+Password verified successfully for user ID: 2 | 2026-06-24 10:14:35
+<=============================================>
+JWT generated for user ID: 2 | 2026-06-24 10:14:35
+<=============================================>
+=== ADMIN LOGIN ATTEMPT END === | 2026-06-24 10:14:35
+<=============================================>
+=== ADMIN TOGGLE 2FA ATTEMPT START === | 2026-06-24 10:15:51
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-24 10:15:51
+<=============================================>
+=== ADMIN LOGIN ATTEMPT START === | 2026-06-24 10:15:57
+<=============================================>
+Raw Input Data: {"email":"akinjuwon.a@oatek.net","password":"password"} | 2026-06-24 10:15:57
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='akinjuwon.a@oatek.net' | 2026-06-24 10:15:57
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-24 10:15:57
+<=============================================>
+User record fetched for: akinjuwon.a@oatek.net | 2026-06-24 10:15:57
+<=============================================>
+Password verified successfully for user ID: 2 | 2026-06-24 10:15:57
+<=============================================>
+JWT generated for user ID: 2 | 2026-06-24 10:15:57
+<=============================================>
+=== ADMIN LOGIN ATTEMPT END === | 2026-06-24 10:15:57
+<=============================================>
+=== ADMIN TOGGLE 2FA ATTEMPT START === | 2026-06-24 10:16:01
+<=============================================>
+Auth blocked: invalid or expired token | 2026-06-24 10:16:01
+<=============================================>
+=== ADMIN TOGGLE 2FA ATTEMPT START === | 2026-06-24 10:16:16
+<=============================================>
+Authorized caller: id=2 role=admin | 2026-06-24 10:16:16
+<=============================================>
+Admin 2FA toggled to 1 for id=2 | 2026-06-24 10:16:16
+<=============================================>
+=== ADMIN TOGGLE 2FA ATTEMPT END === | 2026-06-24 10:16:16
+<=============================================>
+=== ADMIN LOGIN ATTEMPT START === | 2026-06-24 10:16:57
+<=============================================>
+Raw Input Data: {"email":"akinjuwon.a@oatek.net","password":"password"} | 2026-06-24 10:16:57
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='akinjuwon.a@oatek.net' | 2026-06-24 10:16:57
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-24 10:16:57
+<=============================================>
+User record fetched for: akinjuwon.a@oatek.net | 2026-06-24 10:16:57
+<=============================================>
+Password verified successfully for user ID: 2 | 2026-06-24 10:16:57
+<=============================================>
+Email send failed: {"ErrorCode":10,"Message":"Request does not contain a valid Server token."} | 2026-06-24 10:16:58
+<=============================================>
+Failed to send OTP email to akinjuwon.a@oatek.net | 2026-06-24 10:16:58
+<=============================================>
+2FA OTP sent to akinjuwon.a@oatek.net, temp token generated | 2026-06-24 10:16:58
+<=============================================>
+=== ADMIN VERIFY 2FA ATTEMPT START === | 2026-06-24 10:19:40
+<=============================================>
+Raw Input: {"temp_token":"0b3f409c70e2bbfc6840384f9da2c55372af1c5521598589124f8b7004b791eb","otp":"720827"} | 2026-06-24 10:19:40
+<=============================================>
+2FA verification successful for admin id=2 | 2026-06-24 10:19:40
+<=============================================>
+=== ADMIN VERIFY 2FA ATTEMPT END === | 2026-06-24 10:19:40
+<=============================================>
+=== ADMIN TOGGLE 2FA ATTEMPT START === | 2026-06-24 10:20:14
+<=============================================>
+Authorized caller: id=2 role=admin | 2026-06-24 10:20:14
+<=============================================>
+Admin 2FA toggled to 0 for id=2 | 2026-06-24 10:20:14
+<=============================================>
+=== ADMIN TOGGLE 2FA ATTEMPT END === | 2026-06-24 10:20:14
+<=============================================>
+=== ADMIN LOGIN ATTEMPT START === | 2026-06-24 10:20:21
+<=============================================>
+Raw Input Data: {"email":"akinjuwon.a@oatek.net","password":"password"} | 2026-06-24 10:20:21
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='akinjuwon.a@oatek.net' | 2026-06-24 10:20:21
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-24 10:20:21
+<=============================================>
+User record fetched for: akinjuwon.a@oatek.net | 2026-06-24 10:20:21
+<=============================================>
+Password verified successfully for user ID: 2 | 2026-06-24 10:20:21
+<=============================================>
+JWT generated for user ID: 2 | 2026-06-24 10:20:21
+<=============================================>
+=== ADMIN LOGIN ATTEMPT END === | 2026-06-24 10:20:21
+<=============================================>
+=== ADMIN FORGOT PASSWORD ATTEMPT START === | 2026-06-24 10:21:31
+<=============================================>
+Raw Input: {"email":"akinjuwon.a@oatek.net"} | 2026-06-24 10:21:31
+<=============================================>
+Email send failed: {"ErrorCode":10,"Message":"Request does not contain a valid Server token."} | 2026-06-24 10:21:32
+<=============================================>
+Failed to send OTP email to akinjuwon.a@oatek.net | 2026-06-24 10:21:32
+<=============================================>
+Admin forgot password OTP sent to akinjuwon.a@oatek.net | 2026-06-24 10:21:32
+<=============================================>
+=== ADMIN FORGOT PASSWORD ATTEMPT END === | 2026-06-24 10:21:32
+<=============================================>
+=== ADMIN RESET PASSWORD ATTEMPT START === | 2026-06-24 10:24:18
+<=============================================>
+Raw Input: {"email":"akinjuwon.a@oatek.net","otp":"738521","new_password":"password1"} | 2026-06-24 10:24:18
+<=============================================>
+Admin password reset successful for id=2 | 2026-06-24 10:24:18
+<=============================================>
+=== ADMIN RESET PASSWORD ATTEMPT END === | 2026-06-24 10:24:18
+<=============================================>
+=== ADMIN LOGIN ATTEMPT START === | 2026-06-24 10:24:37
+<=============================================>
+Raw Input Data: {"email":"akinjuwon.a@oatek.net","password":"password"} | 2026-06-24 10:24:37
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='akinjuwon.a@oatek.net' | 2026-06-24 10:24:37
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-24 10:24:37
+<=============================================>
+User record fetched for: akinjuwon.a@oatek.net | 2026-06-24 10:24:37
+<=============================================>
+Password mismatch for email: akinjuwon.a@oatek.net | 2026-06-24 10:24:38
+<=============================================>
+=== ADMIN LOGIN ATTEMPT END === | 2026-06-24 10:24:38
+<=============================================>
+=== ADMIN LOGIN ATTEMPT START === | 2026-06-24 10:24:47
+<=============================================>
+Raw Input Data: {"email":"akinjuwon.a@oatek.net","password":"password1"} | 2026-06-24 10:24:47
+<=============================================>
+Executing SQL query: SELECT id, firstname, lastname, email, password, role, two_fa, soft_delete FROM admins WHERE email='akinjuwon.a@oatek.net' | 2026-06-24 10:24:47
+<=============================================>
+Query executed. Rows found: 1 | 2026-06-24 10:24:47
+<=============================================>
+User record fetched for: akinjuwon.a@oatek.net | 2026-06-24 10:24:47
+<=============================================>
+Password verified successfully for user ID: 2 | 2026-06-24 10:24:47
+<=============================================>
+JWT generated for user ID: 2 | 2026-06-24 10:24:47
+<=============================================>
+=== ADMIN LOGIN ATTEMPT END === | 2026-06-24 10:24:47
+<=============================================>

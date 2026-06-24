@@ -45,7 +45,7 @@ try {
     log_action("Executing SQL query: $sql");
 
     $result = $conn->query($sql);
-
+    
     if (!$result) {
         log_action("Query failed: " . $conn->error);
         echo generateResponse(false, "Database error occurred.", null, 500);
@@ -66,7 +66,7 @@ try {
             exit;
         }
 
-        // Verify URL matches organisation (optional – keep as is)
+        // Verify URL matches organisation
         // if (getBaseUrl($url) !== getBaseUrl($client['organisation_url'])) {
         //     log_action("Login blocked: user logging in into the wrong company. email=$email submitted=" . getBaseUrl($url) . " org=" . getBaseUrl($client['organisation_url']));
         //     echo generateResponse(false, "Invalid credentials.", null, 401);
@@ -77,48 +77,13 @@ try {
         if (password_verify($password, $client['password'])) {
             log_action("Password verified successfully for client ID: {$client['id']}");
 
-            // --- 2FA CHECK ---
             if ((int) $client['two_fa'] === 1) {
-                // Generate 6-digit OTP
-                $otp = generateRandomNumbersString();
-                $otpExpires = date('Y-m-d H:i:s', strtotime('+5 minutes'));
-
-                // Generate a temporary token (random string)
-                $tempToken = bin2hex(random_bytes(32)); // 64 hex chars
-                $tempExpires = date('Y-m-d H:i:s', strtotime('+5 minutes'));
-
-                // Update client with temp token and OTP
-                $updateSql = "UPDATE clients SET 
-                              token = '$tempToken', 
-                              token_expires_at = '$tempExpires',
-                              otp = '$otp', 
-                              otp_expires_at = '$otpExpires', 
-                              otp_attempts = 0 
-                              WHERE id = {$client['id']}";
-                if (!$conn->query($updateSql)) {
-                    log_action("Failed to update OTP/token: " . $conn->error);
-                    throw new Exception("Failed to process request.");
-                }
-
-                // Send OTP via email (using your existing sendMail function)
-                // $mailSent = sendMail($otp, $email); // from utilityFunctions.php
-                $mailSent = sendMails($otp, $email);
-                if (!$mailSent) {
-                    log_action("Failed to send OTP email to $email");
-                    // We still return the temp_token – the client will see the OTP request, but if email fails, they won't get it.
-                }
-
-                log_action("2FA OTP sent to $email, temp token generated");
-                echo generateResponse(true, "Two-factor authentication required. OTP sent to your email.", [
-                    'two_fa_required' => true,
-                    'temp_token'      => $tempToken,
-                    'expires_in'      => '5 minutes'
+                echo generateResponse(false, "Two-factor authentication required", [
+                    "two_fa_required" => true
                 ], 200);
-                closeConnection($conn);
                 exit;
             }
 
-            // --- 2FA NOT ENABLED – proceed with normal login ---
             $payload = [
                 'id'    => $client['id'],
                 'email' => $client['email'],
@@ -139,6 +104,7 @@ try {
             }
 
             try {
+                // Write to activity log
                 audit_log($conn, $client['id'], $client['name'], getLogMessage('clientLoggedIn'), 1);
             } catch (\Throwable $e) {
                 log_action("Audit log call failed: " . $e->getMessage());

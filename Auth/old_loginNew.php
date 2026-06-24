@@ -19,7 +19,7 @@ require_once __DIR__ . '/../log.php';
 require_once __DIR__ . '/../jwt.php';
 
 $conn = getConnection();
-log_action("=== ADMIN LOGIN ATTEMPT START ===");
+log_action("=== LOGIN ATTEMPT START ===");
 
 try {
     $data = getRequestBody();
@@ -63,53 +63,19 @@ try {
         if (password_verify($password, $user['password'])) {
             log_action("Password verified successfully for user ID: {$user['id']}");
 
-            // ---- 2FA CHECK ----
             if ((int) $user['two_fa'] === 1) {
-                // Generate 6-digit OTP
-                $otp = generateRandomNumbersString();
-                $otpExpires = date('Y-m-d H:i:s', strtotime('+5 minutes'));
-
-                // Generate a temporary token (random string)
-                $tempToken = bin2hex(random_bytes(32)); // 64 hex chars
-                $tempExpires = date('Y-m-d H:i:s', strtotime('+5 minutes'));
-
-                // Update admin with temp token and OTP
-                $updateSql = "UPDATE admins SET 
-                              token = '$tempToken', 
-                              token_expires_at = '$tempExpires',
-                              otp = '$otp', 
-                              otp_expires_at = '$otpExpires', 
-                              otp_attempts = 0 
-                              WHERE id = {$user['id']}";
-                if (!$conn->query($updateSql)) {
-                    log_action("Failed to update OTP/token: " . $conn->error);
-                    throw new Exception("Failed to process request.");
-                }
-
-                // Send OTP via Postmark (or email)
-                $mailSent = sendMails($otp, $email); // uses Postmark – no PHPMailer needed
-                if (!$mailSent) {
-                    log_action("Failed to send OTP email to $email");
-                    // Optionally, you can still proceed to avoid leaking info
-                }
-
-                log_action("2FA OTP sent to $email, temp token generated");
-                echo generateResponse(true, "Two-factor authentication required. OTP sent to your email.", [
-                    'two_fa_required' => true,
-                    'temp_token'      => $tempToken,
-                    'expires_in'      => '5 minutes'
+                echo generateResponse(false, "Two-factor authentication required", [
+                    "two_fa_required" => true
                 ], 200);
-                closeConnection($conn);
                 exit;
             }
 
-            // ---- 2FA NOT ENABLED – proceed with normal login ----
             $payload = [
-                'id'    => $user['id'],
+                'id' => $user['id'],
                 'email' => $user['email'],
-                'role'  => $user['role'],
-                'iat'   => time(),
-                'exp'   => time() + 1800
+                'role' => $user['role'],
+                'iat' => time(),
+                'exp' => time() + 1800
             ];
 
             $jwt = generateJWT($payload);
@@ -134,26 +100,28 @@ try {
             echo generateResponse(true, "Login successful.", [
                 "token" => $jwt,
                 "user" => [
-                    "id"        => $user["id"],
+                    "id" => $user["id"],
                     "firstname" => $user["firstname"],
-                    "lastname"  => $user["lastname"],
-                    "email"     => $user["email"],
-                    "role"      => $user["role"],
-                    "two_fa"    => (int) $user["two_fa"]
+                    "lastname" => $user["lastname"],
+                    "email" => $user["email"],
+                    "role" => $user["role"],
+                    "two_fa" => (int) $user["two_fa"]
                 ]
             ], 200);
         } else {
             log_action("Password mismatch for email: $email");
-            echo generateResponse(false, "Username or password is wrong", null, 401);
+            echo generateResponse(false, "Username or passsword is wrong", null, 401);
         }
     } else {
         log_action("Login failed: No matching user for email: $email");
         echo generateResponse(false, "Request cannot be processed.", null, 401);
     }
 } catch (\Throwable $e) {
-    log_action("Admin login exception: " . $e->getMessage());
-    echo generateResponse(false, "An error occurred", null, 500);
+    log_action("Login exception: " . $e->getMessage());
+    echo generateResponse(false, "An error occured", null, 500);
 } finally {
     closeConnection($conn);
-    log_action("=== ADMIN LOGIN ATTEMPT END ===");
+    log_action("=== LOGIN ATTEMPT END ===");
 }
+
+
