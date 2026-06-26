@@ -4,11 +4,7 @@ require_once __DIR__ . '/../log.php';
 
 function getConnection()
 {
-/*    $host = "10.128.0.18";
-    $user = "comvivaUser";
-    $pass = "comviva1@#$";
-    $db = "comviva";
- */
+
 
     $host = "127.0.0.1";
     $user = "root";
