@@ -4,20 +4,20 @@ require_once __DIR__ . '/../log.php';
 
 function getConnection()
 {
+/*    $host = "10.128.0.18";
+    $user = "comvivaUser";
+    $pass = "comviva1@#$";
+    $db = "comviva";
+ */
 
-    // $host = "127.0.0.1";
-    // $user = "root";
-    // $pass = "root";
-    // $db = "crbtPortal";
-    // $port = 8889;
-
-    $user = "crbtPortalUser";
-    $pass =  "&%crbt!@#$";
-    $db   = "crbtportal";
-    $host = "10.128.0.29";
+    $host = "127.0.0.1";
+    $user = "root";
+    $pass = "root";
+    $db = "crbtPortal";
+    $port = 8889;
 
     try {
-        $conn = new mysqli($host, $user, $pass, $db);
+        $conn = new mysqli($host, $user, $pass, $db, $port);
 
         if ($conn->connect_error) {
             log_action("DB connection failed: " . $conn->connect_error);
@@ -35,7 +35,7 @@ function getConnection()
 
 function getConnectionTwo()
 {
-    /*    $host = "10.128.0.18";
+/*    $host = "10.128.0.18";
     $user = "comvivaUser";
     $pass = "comviva1@#$";
     $db = "comviva";
