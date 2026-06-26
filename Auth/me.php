@@ -5,10 +5,17 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once __DIR__ . '/../utils/response.php';
-require_once __DIR__ . '/../utils/utilityFunctions.php';
+include '../utils/utilityFunctions.php';
+
 
 // Set CORS and content-type headers
 setCorsHeaders();
+
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    setCorsHeaders();
+    http_response_code(200);
+    exit;
+}
 
 // Reject non-GET requests
 if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
@@ -57,16 +64,16 @@ try {
     log_action("Me retrieved successfully: id=$id");
 
     echo generateResponse(true, "User retrieved successfully.", [
-                "token" => $user["token"],
-                "user" => [
-                    "id" => $user["id"],
-                    "firstname" => $user["firstname"],
-                    "lastname" => $user["lastname"],
-                    "email" => $user["email"],
-                    "role" => $user["role"],
-                    "two_fa" => (int) $user["two_fa"]
-                ]
-            ], 200);
+        "token" => $user["token"],
+        "user" => [
+            "id" => $user["id"],
+            "firstname" => $user["firstname"],
+            "lastname" => $user["lastname"],
+            "email" => $user["email"],
+            "role" => $user["role"],
+            "two_fa" => (int) $user["two_fa"]
+        ]
+    ], 200);
 } catch (\Throwable $e) {
     log_action("Me exception: " . $e->getMessage());
     echo generateResponse(false, "An error occured", null, 500);

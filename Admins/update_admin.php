@@ -5,10 +5,17 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once __DIR__ . '/../utils/response.php';
-require_once __DIR__ . '/../utils/utilityFunctions.php';
+include '../utils/utilityFunctions.php';
+
 
 // Set CORS and content-type headers
 setCorsHeaders();
+
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    setCorsHeaders();
+    http_response_code(200);
+    exit;
+}
 
 // Reject non-POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {

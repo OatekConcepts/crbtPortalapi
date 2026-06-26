@@ -5,9 +5,16 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once __DIR__ . '/../utils/response.php';
-require_once __DIR__ . '/../utils/utilityFunctions.php';
+include '../utils/utilityFunctions.php';
+
 
 setCorsHeaders();
+
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    setCorsHeaders();
+    http_response_code(200);
+    exit;
+}
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo generateResponse(false, "Method not allowed. Use POST.", null, 405);
@@ -123,5 +130,3 @@ try {
     closeConnection($conn);
     log_action("=== LOGIN ATTEMPT END ===");
 }
-
-
