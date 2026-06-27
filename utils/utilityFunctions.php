@@ -118,101 +118,6 @@ function getLogMessage($key, $context = [])
 }
 
 
-// Helper: Send OTP SMS
-
-
-function sendMadApiSMS($msisdn, $request_id, $message)
-{
-    $url = "https://prod5-nigeria.api.mtn.com/v3/sms/messages/sms/outbound";
-    $body = [
-        "senderAddress" => "COMVIVA",
-        "receiverAddress" => [$msisdn],
-        "clientCorrelatorId" => $request_id,
-        "keyword" => "OTP",
-        "serviceCode" => "13111",
-        "requestDeliveryReceipt" => false,
-        "message" => $message
-    ];
-
-    $headers = [
-        'x-api-key: S0DfNdzydE9Ae1KRif8kVqIsd6YgZTLQ',
-        'Content-Type: application/json'
-    ];
-
-    $curl = curl_init();
-    curl_setopt_array($curl, [
-        CURLOPT_URL => $url,
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_ENCODING => '',
-        CURLOPT_MAXREDIRS => 10,
-        CURLOPT_TIMEOUT => 30,
-        CURLOPT_SSL_VERIFYHOST => 0,
-        CURLOPT_SSL_VERIFYPEER => 0,
-        CURLOPT_FOLLOWLOCATION => true,
-        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-        CURLOPT_CUSTOMREQUEST => 'POST',
-        CURLOPT_POSTFIELDS => json_encode($body),
-        CURLOPT_HTTPHEADER => $headers
-    ]);
-
-    $response = curl_exec($curl);
-    $err = curl_error($curl);
-    curl_close($curl);
-
-    if ($err) {
-        return [
-            'success' => false,
-            'error' => $err
-        ];
-    } else {
-        return [
-            'success' => true,
-            'response' => json_decode($response, true)
-        ];
-    }
-}
-
-
-
-
-
-function sendSms($to, $text, $from = '39602', $smsc = '500') {
-    $username = 'tester';
-    $password = 'foobar';
-    $baseUrl = 'http://10.128.0.13:13013/cgi-bin/sendsms';
-
-    // Build query parameters
-    $queryParams = http_build_query([
-        'username' => $username,
-        'password' => $password,
-        'from'     => $from,
-        'to'       => $to,
-        'text'     => $text,
-        'smsc'     => $smsc
-    ]);
-
-    // Full URL
-    $url = "$baseUrl?$queryParams";
-
-    // Initialize cURL
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-    // Execute request
-    $response = curl_exec($ch);
-    $error = curl_error($ch);
-    // curl_close($ch);
-
-    // Return response or error
-    if ($error) {
-        return "cURL Error: $error";
-    }
-
-    return $response;
-}
-
-
 
 // Helper: Send OTP Mail
 
@@ -229,15 +134,15 @@ function sendMails($otp, $email)
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.zoho.com';
+        $mail->Host       = '';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'info@pinspay.com';
-        $mail->Password   = 'rkAS6rmM3kkB';
-        $mail->SMTPSecure = 'tls'; // use 'ssl' if using port 465
-        $mail->Port       = 587;
+        $mail->Username   = '';
+        $mail->Password   = '';
+        $mail->SMTPSecure = ''; 
+        $mail->Port       = '';
 
         // Sender and recipient
-        $mail->setFrom('info@pinspay.com', 'CRBT');
+        $mail->setFrom('');
         $mail->addAddress($email); // recipient address
 
         // Email content
@@ -276,8 +181,5 @@ function generateRandomNumbersString()
 {
     return str_pad(rand(0, 999999), 6, '0', STR_PAD_LEFT);
 }
-
-
-
 
 
