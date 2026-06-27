@@ -29,33 +29,7 @@ function getConnection()
     }
 }
 
-function getConnectionTwo()
-{
-/*    $host = "10.128.0.18";
-    $user = "comvivaUser";
-    $pass = "comviva1@#$";
-    $db = "comviva";
- */
 
-    $host = "10.128.0.14";
-    $user = "otaCentral";
-    $pass = '$ComviBundle1!@#';
-    $db = "comviva";
-
-    try {
-        $conn = new mysqli($host, $user, $pass, $db);
-
-        if ($conn->connect_error) {
-            echo generateResponse(false, "An error occured", null, 500);
-            exit;
-        }
-
-        return $conn;
-    } catch (\mysqli_sql_exception $e) {
-        echo generateResponse(false, "An error occured");
-        exit;
-    }
-}
 function closeConnection($conn)
 {
     if ($conn) {
