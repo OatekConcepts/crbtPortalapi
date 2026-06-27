@@ -216,39 +216,37 @@ function sendSms($to, $text, $from = '39602', $smsc = '500') {
 
 // Helper: Send OTP Mail
 
-function sendMail($otp, $email)
+function sendMails($otp, $email)
 {
-    // require_once './PHPMailer/PHPMailer.php';
-    // require_once './PHPMailer/SMTP.php';
-    // require_once './PHPMailer/Exception.php';
 
-    require_once __DIR__ . '/PHPMailer/PHPMailer.php';
-    require_once __DIR__ . '/PHPMailer/SMTP.php';
-    require_once __DIR__ . '/PHPMailer/Exception.php';
+    //correct path
+     require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/PHPMailer.php';
+    require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/SMTP.php';
+    require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/Exception.php';
 
     $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host       = 'email-smtp.us-east-1.amazonaws.com';
+        $mail->Host       = 'smtp.zoho.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'AKIAX7YTA767FYW7IXJO';
-        $mail->Password   = 'BHcB+rfmYUOHkYwa94z3t/BdUM+7VmVD4ux8Eo14x/js';
+        $mail->Username   = 'info@pinspay.com';
+        $mail->Password   = 'rkAS6rmM3kkB';
         $mail->SMTPSecure = 'tls'; // use 'ssl' if using port 465
         $mail->Port       = 587;
 
         // Sender and recipient
-        $mail->setFrom('mail@redtechlimited.com', 'RedTech');
+        $mail->setFrom('info@pinspay.com', 'CRBT');
         $mail->addAddress($email); // recipient address
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = '🔐 Login OTP';
+        $mail->Subject = 'Login OTP';
         $mail->Body    = "
             <html><body style='font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; margin: 0;'>
                 <div style='max-width: 600px; margin: 40px auto; background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);'>
-                    <h2 style='color: #e11d48; text-align: center;'>🔐  Your Secure Login OTP</h2>
+                    <h2 style='color: #e11d48; text-align: center;'>  Your Secure Login OTP</h2>
                     <p style='font-size: 16px; color: #333;'>Dear User,</p>
                     <p style='font-size: 15px; color: #555; line-height: 1.6;'>For your security, <strong>never share your OTP</strong> with anyone. Use this code to complete your login on the official platform.</p>
                     <div style='text-align: center; margin: 30px 0;'>
@@ -279,56 +277,7 @@ function generateRandomNumbersString()
     return str_pad(rand(0, 999999), 6, '0', STR_PAD_LEFT);
 }
 
-function sendMails($otp, $email)
-{
-    $status = "<html><body style='font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; margin: 0;'>
-    <div style='max-width: 600px; margin: 40px auto; background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);'>
-      <h2 style='color: #e11d48; text-align: center;'>🔐 Your Secure Login OTP</h2>
-      <p style='font-size: 16px; color: #333;'>Dear User,</p>
-      <p style='font-size: 15px; color: #555; line-height: 1.6;'>
-        For your security, <strong>never share your OTP</strong> with anyone.
-        Use this code to complete your login on the official platform.
-      </p>
-      <div style='text-align: center; margin: 30px 0;'>
-        <span style='display: inline-block; background-color: #f3f4f6; color: #111827; font-size: 32px; letter-spacing: 5px; padding: 15px 30px; border-radius: 8px; font-weight: bold; border: 1px dashed #e11d48;'>
-          $otp
-        </span>
-      </div>
-      <p style='font-size: 14px; color: #999; text-align: center;'>
-        This OTP expires in 10 minutes. If this wasn't you, please ignore this email.
-      </p>
-    </div></body></html>";
 
-    $data = [
-        'From' => 'support@ringo.ng',
-        'To' => $email,
-        'Subject' => 'Login OTP',
-        'HtmlBody' => $status,
-    ];
-    $json = json_encode($data);
 
-    $ch = curl_init('https://api.postmarkapp.com/email');
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, [
-        'X-Postmark-Server-Token: 8d7b61f4-10ae-4949-824c-b53a47b17e7b',
-        'Content-Type: application/json',
-        'Accept: application/json'
-    ]);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 
-    $result = curl_exec($ch);
-    $response = json_decode($result, true);
-    // curl_close($ch);
-
-    if (isset($response['MessageID'])) {
-        log_action("Email sent: " . print_r($response, true));
-        return true;
-    } else {
-        log_action("Email send failed: " . $result);
-        return false;
-    }
-}
 
