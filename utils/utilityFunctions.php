@@ -119,13 +119,13 @@ function getLogMessage($key, $context = [])
 
 
 
-
-
 // Helper: Send OTP Mail
 
-function sendMail($otp, $email)
+function sendMails($otp, $email)
 {
-    require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/PHPMailer.php';
+
+    //correct path
+     require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/PHPMailer.php';
     require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/SMTP.php';
     require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/Exception.php';
 
@@ -151,7 +151,7 @@ function sendMail($otp, $email)
         $mail->Body    = "
             <html><body style='font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; margin: 0;'>
                 <div style='max-width: 600px; margin: 40px auto; background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);'>
-                    <h2 style='color: #e11d48; text-align: center;'> Your Secure Login OTP</h2>
+                    <h2 style='color: #e11d48; text-align: center;'>  Your Secure Login OTP</h2>
                     <p style='font-size: 16px; color: #333;'>Dear User,</p>
                     <p style='font-size: 15px; color: #555; line-height: 1.6;'>For your security, <strong>never share your OTP</strong> with anyone. Use this code to complete your login on the official platform.</p>
                     <div style='text-align: center; margin: 30px 0;'>
@@ -181,6 +181,5 @@ function generateRandomNumbersString()
 {
     return str_pad(rand(0, 999999), 6, '0', STR_PAD_LEFT);
 }
-
 
 
